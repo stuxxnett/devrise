@@ -81,19 +81,19 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'Rahul Sharma',
             program: 'Java Development Internship',
             id: 'DVR-2026-001',
-            status: 'Valid'
+            issueDate: 'February 28, 2026'
         },
         'DVR-2026-002': {
             name: 'Priya Patel',
             program: 'Web Development Internship',
             id: 'DVR-2026-002',
-            status: 'Valid'
+            issueDate: 'March 15, 2026'
         },
         'DVR-2026-003': {
             name: 'Aarav Mehta',
             program: 'AI / ML Internship',
             id: 'DVR-2026-003',
-            status: 'Valid'
+            issueDate: 'April 10, 2026'
         }
     };
 
@@ -143,8 +143,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                         <span class="cert-value" style="font-family: monospace;">${cert.id}</span>
                                     </div>
                                     <div class="cert-info-item">
-                                        <span class="cert-label">Status</span>
-                                        <span class="cert-status-tag"><span></span> ${cert.status}</span>
+                                        <span class="cert-label">Issue Date</span>
+                                        <span class="cert-value">${cert.issueDate}</span>
                                     </div>
                                 </div>
                                 <div class="cert-footer">
