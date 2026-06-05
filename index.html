@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevRise | Learn. Build. Rise. Virtual Internships</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Icons for modern visuals -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Theme setup script to prevent flash of unstyled content (FOUC) -->
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header id="header">
+        <div class="container">
+            <a href="#home" class="logo">
+                <img src="logo.png" alt="DevRise Logo" onerror="this.style.display='none';">
+                <span>Dev<span>Rise</span></span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#internships" class="nav-link">Internships</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#verification" class="nav-link">Verification</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#" class="btn btn-primary nav-mobile-btn btn-apply-trigger">Apply Now</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-sun icon-sun"></i>
+                    <i class="fa-solid fa-moon icon-moon"></i>
+                </button>
+                <button class="btn btn-primary btn-apply-trigger">Apply Now</button>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section (Home) -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <span></span> Virtual Internships 2026
+                        </div>
+                        <h1 class="hero-title">Kickstart Your Industry Journey</h1>
+                        <div class="hero-tagline">
+                            <span class="tagline-item">Learn.</span>
+                            <span class="tagline-item">Build.</span>
+                            <span class="tagline-item">Rise.</span>
+                        </div>
+                        <p class="hero-desc">
+                            Bridge the gap between academic learning and industry requirements. Gain real project-based
+                            experience, work with modern tools, and earn professional certificates.
+                        </p>
+                        <div class="hero-ctas">
+                            <button class="btn btn-primary btn-apply-trigger">
+                                Apply for Internship <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                            <a href="#internships" class="btn btn-secondary">
+                                Explore Programs
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="hero-art-bg"></div>
+                        <div class="art-orb">
+                            <div class="art-orb-inner">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                        </div>
+                        <div class="art-card art-card-1">
+                            <div class="art-card-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="art-card-text">
+                                <span>Real projects</span>
+                                <strong>Build Portfolio</strong>
+                            </div>
+                        </div>
+                        <div class="art-card art-card-2">
+                            <div class="art-card-icon">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div class="art-card-text">
+                                <span>Verified</span>
+                                <strong>Certificate</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Internship Programs Section -->
+        <section id="internships" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Our Programs</span>
+                    <h2 class="section-title">Virtual Internship Tracks</h2>
+                    <p class="section-description">Select an internship path that aligns with your career goals and work
+                        on curated hands-on projects.</p>
+                </div>
+
+                <div class="internship-grid">
+                    <!-- Java Development Internship -->
+                    <div class="glass-card internship-card">
+                        <div class="card-header">
+                            <div class="card-icon-container">
+                                <i class="fa-brands fa-java"></i>
+                            </div>
+                            <span class="card-badge">Project-Based</span>
+                        </div>
+                        <h3 class="card-title">Java Development</h3>
+                        <p class="card-desc">Master backend logic, object-oriented concepts, and enterprise
+                            architectures through comprehensive hands-on practice.</p>
+                        <ul class="card-features">
+                            <li><i class="fa-solid fa-circle-check"></i> 4 Weeks Duration</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Project-Based Learning</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Industry standard practices</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Certificate on Completion</li>
+                        </ul>
+                        <button class="btn btn-secondary card-btn btn-apply-trigger">Apply Now</button>
+                    </div>
+
+                    <!-- Web Development Internship -->
+                    <div class="glass-card internship-card">
+                        <div class="card-header">
+                            <div class="card-icon-container">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <span class="card-badge">Real Projects</span>
+                        </div>
+                        <h3 class="card-title">Web Development</h3>
+                        <p class="card-desc">Design interactive user interfaces and build responsive web applications
+                            using modern front-end tech stacks.</p>
+                        <ul class="card-features">
+                            <li><i class="fa-solid fa-circle-check"></i> 4 Weeks Duration</li>
+                            <li><i class="fa-solid fa-circle-check"></i> HTML5, CSS3, JavaScript</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Responsive Web Layouts</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Certificate on Completion</li>
+                        </ul>
+                        <button class="btn btn-secondary card-btn btn-apply-trigger">Apply Now</button>
+                    </div>
+
+                    <!-- AI/ML Internship -->
+                    <div class="glass-card internship-card">
+                        <div class="card-header">
+                            <div class="card-icon-container">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <span class="card-badge">Mini Projects</span>
+                        </div>
+                        <h3 class="card-title">AI & Machine Learning</h3>
+                        <p class="card-desc">Dive deep into Python programming, mathematical foundations, and basic
+                            neural networks to build intelligent models.</p>
+                        <ul class="card-features">
+                            <li><i class="fa-solid fa-circle-check"></i> 4 Weeks Duration</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Python & ML Libraries</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Data Preprocessing basics</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Certificate on Completion</li>
+                        </ul>
+                        <button class="btn btn-secondary card-btn btn-apply-trigger">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-visual glass-card">
+                        <div class="about-visual-overlay"></div>
+                        <div class="about-visual-box">
+                            <div class="about-stat">5k+</div>
+                            <div class="about-stat-label">Interns Guided</div>
+                            <p class="about-stat-desc">Providing practical hands-on industry-oriented experience.</p>
+                        </div>
+                    </div>
+
+                    <div class="about-content">
+                        <span class="section-subtitle">Who We Are</span>
+                        <h3>Bridging the Academic-Industry Gap</h3>
+                        <p class="about-p">
+                            DevRise was founded to address a critical challenge in modern education: the gap between
+                            theoretical academic curricula and the active practical demands of the technology industry.
+                            We provide structured virtual internships that mirror actual workplace workflows.
+                        </p>
+
+                        <div class="about-pillars">
+                            <div class="pillar-item">
+                                <div class="pillar-icon">
+                                    <i class="fa-solid fa-bullseye"></i>
+                                </div>
+                                <div>
+                                    <h4 class="pillar-title">Our Mission</h4>
+                                    <p class="pillar-desc">To empower aspiring developers with practical tools and
+                                        mentorship to successfully launch tech careers.</p>
+                                </div>
+                            </div>
+
+                            <div class="pillar-item">
+                                <div class="pillar-icon">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div>
+                                    <h4 class="pillar-title">Our Vision</h4>
+                                    <p class="pillar-desc">A learning landscape where hands-on, micro-internship
+                                        experiences are universally accessible.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificate Verification Section -->
+        <section id="verification" class="section">
+            <div class="container">
+                <div class="verify-container">
+                    <div class="glass-card verify-card">
+                        <span class="section-subtitle">Credential Check</span>
+                        <h3>Verify Certificate</h3>
+                        <p>Verify the authenticity of credentials issued by DevRise. Enter the Certificate ID below to
+                            view verification status and details.</p>
+
+                        <form id="verify-form" class="verify-form" onsubmit="return false;">
+                            <div class="form-group-verify">
+                                <input type="text" id="cert-id-input" class="verify-input"
+                                    placeholder="e.g. DVR-2026-001" required>
+                                <i class="fa-solid fa-search"></i>
+                            </div>
+                            <button type="submit" class="btn btn-primary verify-submit">
+                                Verify Now <i class="fa-solid fa-shield-check"></i>
+                            </button>
+                        </form>
+                        <div class="verify-tip">
+                            Try searching for sample ID: <code>DVR-2026-001</code>
+                        </div>
+
+                        <!-- Result Box (Hidden by default, displayed via script.js) -->
+                        <div class="verify-result" id="verify-result">
+                            <!-- Certificate layout dynamic injection -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Got Questions?</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-description">Find answers to common questions about the virtual internship program
+                        and certificates.</p>
+                </div>
+
+                <div class="faq-container">
+                    <div class="glass-card faq-item">
+                        <button class="faq-trigger">
+                            <span class="faq-question">Is the internship paid or free?</span>
+                            <span class="faq-icon-box"><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-answer">
+                                Our virtual internships are self-paced, project-based experiential programs. They are
+                                unpaid, designed to simulate hands-on training, and offer free access to structured
+                                paths and feedback for students to build up their portfolio.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card faq-item">
+                        <button class="faq-trigger">
+                            <span class="faq-question">How and when do I get the certificate?</span>
+                            <span class="faq-icon-box"><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-answer">
+                                Upon successfully completing and submitting your final project within the assigned
+                                timeframe (4 weeks), our evaluation team will review your work. Once verified, a unique
+                                verifiable Certificate ID is issued to you.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card faq-item">
+                        <button class="faq-trigger">
+                            <span class="faq-question">What is the duration of the internship?</span>
+                            <span class="faq-icon-box"><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-answer">
+                                The standard duration for each internship track is 4 weeks. This gives you ample time to
+                                go through resources, map out your project development, build the solution, and submit
+                                your work.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card faq-item">
+                        <button class="faq-trigger">
+                            <span class="faq-question">Are there actual projects involved?</span>
+                            <span class="faq-icon-box"><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-answer">
+                                Yes, every internship is project-based. You will work on real-world assignment briefs
+                                (e.g., full Java applications, responsive websites, or training basic AI models) to make
+                                sure you develop practical, hireable skills.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="glass-card contact-grid">
+                    <div class="contact-info-panel">
+                        <div>
+                            <h3 class="contact-info-title">Let's Connect</h3>
+                            <p class="contact-info-desc">Have questions about application cycles, certificates, or
+                                programs? Get in touch with us.</p>
+
+                            <div class="contact-details">
+                                <div class="contact-detail-item">
+                                    <div class="contact-detail-icon">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-detail-text">
+                                        <span>Email Us</span>
+                                        <a href="mailto:info.devrise@gmail.com">info.devrise@gmail.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-detail-item">
+                                    <div class="contact-detail-icon">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </div>
+                                    <div class="contact-detail-text">
+                                        <span>LinkedIn</span>
+                                        <a href="https://linkedin.com/company/devrise26" target="_blank"
+                                            rel="noopener">linkedin.com/company/devrise</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-socials">
+                            <a href="https://linkedin.com/company/devrise" class="btn btn-icon" target="_blank"
+                                rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="mailto:info.devrise@gmail.com" class="btn btn-icon" aria-label="Email"><i
+                                    class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-panel">
+                        <h3 class="contact-form-title">Send a Message</h3>
+                        <form id="contact-form" onsubmit="return false;">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-name" class="form-label">Full Name</label>
+                                    <input type="text" id="contact-name" class="form-control" placeholder="John Doe"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-email" class="form-label">Email Address</label>
+                                    <input type="email" id="contact-email" class="form-control"
+                                        placeholder="john@example.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-program" class="form-label">Program of Interest</label>
+                                <select id="contact-program" class="form-control">
+                                    <option value="general">General Inquiry</option>
+                                    <option value="java">Java Development Internship</option>
+                                    <option value="web">Web Development Internship</option>
+                                    <option value="ai">AI / ML Internship</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-message" class="form-label">Your Message</label>
+                                <textarea id="contact-message" class="form-control" placeholder="How can we help you?"
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary contact-btn">
+                                Send Message <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <img src="logo.png" alt="DevRise Logo" onerror="this.style.display='none';">
+                        <span>Dev<span>Rise</span></span>
+                    </a>
+                    <p>Fostering the next generation of engineers through rigorous, self-paced, virtual micro-internship
+                        experiences.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-title">Internships</h4>
+                    <ul class="footer-links">
+                        <li><a href="#internships">Java Development</a></li>
+                        <li><a href="#internships">Web Development</a></li>
+                        <li><a href="#internships">AI / ML Track</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-title">Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#verification">Verification</a></li>
+                        <li><a href="#contact">Contact Support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    &copy; 2026 DevRise. All rights reserved.
+                </div>
+                <div class="footer-legal-links">
+                    <a href="#" id="privacy-trigger">Privacy Policy</a>
+                    <a href="#" id="terms-trigger">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Apply Now Modal -->
+    <div class="modal-overlay" id="apply-modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 class="modal-title">Apply for Internship</h3>
+                <button class="modal-close" aria-label="Close Modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h4>Join the Internship Program</h4>
+                <p>Applications for our virtual internship tracks are handled through our official Google Form. Select
+                    your track and complete the short form to register.</p>
+
+                <h4>Internship Highlights:</h4>
+                <ul>
+                    <li>Duration: 4 Weeks</li>
+                    <li>Mode: Virtual & Self-paced</li>
+                    <li>Outcome: Industry project & Verifiable Certificate</li>
+                </ul>
+
+                <p style="margin-bottom: 20px;">Ready to start? Click below to navigate to the official application
+                    form.</p>
+
+                <a href="https://forms.gle/placeholder" target="_blank" rel="noopener" class="btn btn-primary"
+                    style="width: 100%; margin-bottom: 12px;" id="google-form-btn">
+                    Go to Application Form <i class="fa-solid fa-external-link"></i>
+                </a>
+                <p class="verify-tip" style="text-align: center;">You will be redirected to Google Forms.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary modal-close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div class="modal-overlay" id="privacy-modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 class="modal-title">Privacy Policy</h3>
+                <button class="modal-close" aria-label="Close Modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h4>1. Information Collection</h4>
+                <p>We collect basic personal information such as Name, Email, and Phone Number during the internship
+                    registration and contact form submissions to facilitate program operations and credential issuance.
+                </p>
+
+                <h4>2. Use of Information</h4>
+                <p>The collected information is solely used for evaluation, communication during the internship, and
+                    generating verifiable certificates upon program completion.</p>
+
+                <h4>3. Information Sharing</h4>
+                <p>DevRise does not sell, trade, or otherwise transfer your personal information to third parties. We
+                    value your digital privacy and integrity.</p>
+
+                <h4>4. Data Security</h4>
+                <p>We implement secure methods to process registrations and store student records. Certificates public
+                    validation is restricted only to verifying credentials using unique IDs.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary modal-close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms & Conditions Modal -->
+    <div class="modal-overlay" id="terms-modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 class="modal-title">Terms & Conditions</h3>
+                <button class="modal-close" aria-label="Close Modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h4>1. Program Rules</h4>
+                <p>Interns are expected to construct and code their own projects. Plagiarism or code copying from
+                    uncredited repositories without customization violates our code of conduct and leads to rejection.
+                </p>
+
+                <h4>2. Certificate Requirements</h4>
+                <p>To receive the certificate, you must submit a working, code-complete project and documentation within
+                    the 4-week program deadline. Verification details will be permanently searchable on our platform.
+                </p>
+
+                <h4>3. No-Refund Policy</h4>
+                <p>Since the program is complimentary and unpaid, there are no refund policies or charges applied. Any
+                    external websites claiming fees on behalf of DevRise are fraudulent.</p>
+
+                <h4>4. Re-attempt Policy</h4>
+                <p>If you fail to submit your project on time, you can re-apply in the next cohort. We support and
+                    encourage continuous learning.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary modal-close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- JS Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
