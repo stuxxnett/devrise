@@ -927,6 +927,7 @@ header .container {
 }
 .internship-card:nth-child(1):hover .card-icon-container {
     background: #e76f51;
+    color: white;
     box-shadow: 0 0 20px rgba(231, 111, 81, 0.4);
 }
 
@@ -935,6 +936,7 @@ header .container {
 }
 .internship-card:nth-child(2):hover .card-icon-container {
     background: var(--gradient-secondary);
+    color: white;
     box-shadow: 0 0 20px rgba(20, 184, 166, 0.4);
 }
 
@@ -943,6 +945,7 @@ header .container {
 }
 .internship-card:nth-child(3):hover .card-icon-container {
     background: var(--gradient-primary);
+    color: white;
     box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
 }
 
